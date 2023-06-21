@@ -1,0 +1,43 @@
+header{
+  background-color: #333333;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  margin: 20px;
+}
+header h1 {
+  margin-bottom: 0;
+}
+
+.navList{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.Container{
+  text-align: center;
+}
+
+.content--list{
+  list-style: none;
+  padding: 0;
+}
+.content--list li{
+  margin: 10px;
+}
+
+.btn-click{
+  padding: 10px 20px;
+  border: solid 1px black;
+  background-color: black;
+  color: white;
+  pointer-events: auto;
+}
+
+footer{
+  text-align: center;
+  color: #7a7a7a;
+}
