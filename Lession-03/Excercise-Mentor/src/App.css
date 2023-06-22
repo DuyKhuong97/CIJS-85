@@ -1,6 +1,8 @@
 .Container {
   margin: 100px auto;
-  width: 1000px;
+  width: 880px;
+  height: 400px;
+  background-color: rgb(232, 232, 232);
 }
 
 .Nav-bar{
@@ -22,6 +24,7 @@
   height: 40px;
   border: solid 1px rgb(184, 184, 184);;
   border-radius: 10xp;
+  cursor: pointer;
 }
 .dropdown {
   position: relative;

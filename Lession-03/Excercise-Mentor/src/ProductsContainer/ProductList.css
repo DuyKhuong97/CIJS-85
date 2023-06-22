@@ -1,0 +1,32 @@
+.Products-list{
+    display: flex;
+}
+
+.product-discount{
+    margin: 5px 0;
+    font-size: 10px;
+    height: 16px;
+    width: 50px;
+    border: solid 1px red;
+    color: red;
+}
+.product-discount > p {
+    padding-left: 2px;
+}
+
+.product-top{
+    margin: 5px 0;
+    font-size: 13px;
+    height: 20px;
+    width: 70px;
+    background-color:  red;
+    border: solid 1px red;
+    border-radius: 6px;
+    color: white;
+    position: relative;
+    top: -210px;
+    left: -15px;
+}
+.product-top > p {
+    padding: 1px;
+}

@@ -1,7 +1,7 @@
 
 import './App.css';
 import Navsecion from './Navsection';
-
+import ProductList from './ProductsContainer/ProductList';
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="Container">
       <Navsecion/>
       <div>
-      
+      <ProductList/>
       </div>
 
     </div>
