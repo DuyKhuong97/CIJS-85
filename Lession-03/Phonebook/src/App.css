@@ -1,0 +1,36 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+div.app-container ul.list-friend-phone {
+  list-style: none;
+}
+
+div.app-container ul.list-friend-phone li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: gainsboro;
+  margin-bottom: 5px;
+}
+.form-add input{
+  margin: 0 20px;
+}
+.feat-client input{
+  margin: 0 20px;
+}
+.feat-client button{
+  margin: 0 5px;
+}
