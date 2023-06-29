@@ -5,10 +5,12 @@ import { useState } from 'react';
 
 function App() {
 
-  const [user, setUser] = useState({
-    userName: '',
-    userPhone: '',
-  })
+  // const [user, setUser] = useState({
+  //   userName: '',
+  //   userPhone: '',
+  // })
+
+  const [listPhone, setListPhone] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -18,8 +20,9 @@ function App() {
       userName: form['userName'].value,
       userPhone: form['userPhone'].value
     }
-    // console.log(newFriendPhone);
-    setUser(newFriendPhone);
+    listPhone.push(newFriendPhone);
+    console.log(listPhone);
+    setListPhone([...listPhone]);
   };
   
   return (
@@ -38,7 +41,9 @@ function App() {
         <button>Xoá trùng</button>
       </div>
       <ul className="list-friend-phone">
-        <ItemFriendPhone userName={user.userName} userPhone={user.userPhone} />
+      {listPhone.map((item) => {
+        return <ItemFriendPhone userName={item.userName} userPhone={item.userPhone}/>;
+      })}
       </ul>
     </div>
   )
