@@ -17,14 +17,14 @@ function App() {
     // console.log(e.target);
     const form = e.target;
     const newFriendPhone = {
-      userName: form['userName'].value,
+      userName: e.target['userName'].value,
       userPhone: form['userPhone'].value
     }
     listPhone.push(newFriendPhone);
     console.log(listPhone);
     setListPhone([...listPhone]);
   };
-  
+
   return (
 
     <div className="app-container">
@@ -36,7 +36,7 @@ function App() {
       </form>
       <hr />
       <div className="feat-client">
-        <input type="text" placeholder='Tìm kiếm' />
+        <input type="text" placeholder='Tìm kiếm' name='search'/>
         <button>Tìm</button>
         <button>Xoá trùng</button>
       </div>
