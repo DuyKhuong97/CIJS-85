@@ -1,6 +1,7 @@
 import ItemFriendPhone from './components/ItemFriendPhone/Items';
 import './App.css';
 import { useState } from 'react';
+import { v4 as uuid4 } from "uuid"
 
 
 function App() {
@@ -18,12 +19,18 @@ function App() {
     const form = e.target;
     const newFriendPhone = {
       userName: e.target['userName'].value,
-      userPhone: form['userPhone'].value
+      userPhone: form['userPhone'].value,
+      id: uuid4()
     }
     listPhone.push(newFriendPhone);
     console.log(listPhone);
     setListPhone([...listPhone]);
   };
+
+// const deletePhone = () => {
+//   const listAfterDelete = listPhone.filter(User => User.id !== id);
+//   setListPhone(listAfterDelete);  
+// };
 
   return (
 
@@ -42,7 +49,8 @@ function App() {
       </div>
       <ul className="list-friend-phone">
       {listPhone.map((item) => {
-        return <ItemFriendPhone userName={item.userName} userPhone={item.userPhone}/>;
+      return <ItemFriendPhone userName={item.userName} userPhone={item.userPhone} />;
+      // ID = {item.id} deletePhone={deletePhone}
       })}
       </ul>
     </div>
