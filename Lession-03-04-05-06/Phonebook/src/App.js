@@ -27,10 +27,10 @@ function App() {
     setListPhone([...listPhone]);
   };
 
-// const deletePhone = () => {
-//   const listAfterDelete = listPhone.filter(User => User.id !== id);
-//   setListPhone(listAfterDelete);  
-// };
+const deletePhone = (id) => {
+  const listAfterDelete = listPhone.filter(user => user.id !== id);
+  setListPhone(listAfterDelete); 
+};
 
   return (
 
@@ -49,7 +49,7 @@ function App() {
       </div>
       <ul className="list-friend-phone">
       {listPhone.map((item) => {
-      return <ItemFriendPhone userName={item.userName} userPhone={item.userPhone} />;
+      return <ItemFriendPhone userName={item.userName} userPhone={item.userPhone} ID = {item.id} deletePhone={deletePhone} />;
       // ID = {item.id} deletePhone={deletePhone}
       })}
       </ul>

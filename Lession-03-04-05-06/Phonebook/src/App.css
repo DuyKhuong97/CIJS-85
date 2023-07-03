@@ -23,7 +23,7 @@ div.app-container ul.list-friend-phone li {
   padding: 5px;
   border-radius: 5px;
   background-color: gainsboro;
-  margin-bottom: 5px;
+  margin: 5px;
 }
 .form-add input{
   margin: 0 20px;
